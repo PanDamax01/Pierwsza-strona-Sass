@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Strona do nauki</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- czcionki -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Kalam&family=Pacifico&family=Poppins:wght@500;700&display=swap"
+        rel="stylesheet" />
+    <!-- koniec czcionek -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
+    <link rel="stylesheet" href="css/hamburger.css" />
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+    <div class="nav wrapper">
+        <button class="hamburger hamburger--spin" type="button">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </button>
+
+        <nav class="nav-mobile">
+            <div class="nav-mobile-box">
+                <a class="nav-mobile__link" href="#guide">Poradniki</a>
+                <a class="nav-mobile__link" href="#maps">Mapy</a>
+                <a class="nav-mobile__link" href="#contact">Kontakt</a>
+            </div>
+        </nav>
+        <nav class="nav-desktop">
+            <div class="nav-desktop__logo">
+                <a href="./index.html"><img src="./img/logo.png" alt="logo strony" class="nav-desktop__logo-img" /></a>
+            </div>
+            <div class="nav-desktop-box">
+                <a class="nav-desktop__link" href="#guide">Poradniki</a>
+                <a class="nav-desktop__link" href="#maps">Mapy</a>
+                <a class="nav-desktop__link" href="#contact">Kontakt</a>
+            </div>
+        </nav>
+    </div>
+    <header class="header">
+        <h2 class="header__title" id="title">
+            Czas na nową<br /><span class="header__title-text">Przygodę</span>
+        </h2>
+        <img src="./img/blueballon.png" alt="Niebieskiballon" id="ballon1" class="header__img" />
+        <img src="./img/redballon.png" alt="Czerwonyballon" id="🎈" class="header__img" />
+        <img src="./img/forest.png" alt="Las" id="🌲" class="header__img" />
+        <!--  w js odwolac sie do ikonek -->
+        <a href="#" class="header__btn"><button class="header__btn-link">
+                <span>Przeglądaj</span>
+            </button></a>
+        <img src="./img/rocks.png" id="🧱" alt="Skały" id="rocks" class="header__img" />
+        <img src="./img/water.png" id="💦" alt="Woda" id="water" class="header__img" />
+    </header>
+    <main>
+        <section class="waves">
+            <div class="waves__img waves__img--1" id="wave1"></div>
+            <div class="waves__img waves__img--2" id="wave2"></div>
+            <div class="waves__img waves__img--3" id="wave3"></div>
+            <div class="waves__img waves__img--4" id="wave4"></div>
+        </section>
+        <section class="info wrapper section-padding">
+            <h2 class="section-heading">Co to za gra?</h2>
+
+
+            <div class="info__box">
+
+                <div class="info__box-img">
+                    <img src="img/infoimg.jpg" alt="zdjęcie gry clash of clans" class="info__img">
+                </div>
+                <div class="info__box-text">
+                    <p class="info__text"><span class="info__text-specify"> Clash of Clans</span> to społecznościowa
+                        gra strategiczna w realiach fantasy. Zabawa
+                        sprowadza się do rozwijania własnej osady i wykreowania silnej armii, która pozwoli nam
+                        zdobywać
+                        wioski przeciwnika i odpierać ataki wrogów.
+                    </p>
+
+                    <a href="#" class="info__box-text-skip">Pomiń</a>
+                </div>
+            </div>
+            <div class="info__box-text">
+                <h3 class="info__box-text-title">Dla ciekawych:</h3>
+                <p class="info__text"><span class="info__text-specify"> Zabawa w Clash of Clans polega na zbudowaniu
+                        bazy, czy też może raczej osady, którą
+                        będziemy cały czas rozwijać i bronić przed napastnikami.</span> Trzeba więc postawić ratusz,
+                    kopalnię złota, koszary itd. Wszystko po to, by móc w późniejszym czasie budować wieże
+                    strażnicze, stawiać mury oraz produkować nowe jednostki, które wykorzystujemy do nacierania na
+                    bazy innych osób. O ile bowiem w grze jest możliwość mierzenia się ze sztuczną inteligencją, tak
+                    rozgrywka przeznaczona jest przede wszystkim do zmagań w multiplayrze.</p>
+
+                <button class="info__box-btn">
+                    Pokaż więcej!
+                </button>
+
+                <div class="info__box-text-hidden">
+                    <p class="info__text info__box-text-hidden--destription">
+                        Całość jest bardzo prosta do opanowania, więc przygodę z Clash of Clans mogą rozpocząć
+                        również osoby, które do tej pory unikały strategii niczym ognia. Dodatkowo wspomniane
+                        rozgrywki z SI świetnie sprawdzają się jako trening przed starciami z żywymi przeciwnikami.
+                        Samo sterowanie natomiast sprowadza się do stukania palcem w ekran w wybrane miejsca, dzięki
+                        czemu budujemy i przywołujemy jednostki, a cała reszta odbywa się samoczynnie.
+                    </p>
+
+                    <p class="info__text info__box-text-hidden--destription">
+                        <span class="info__text-specify"> Mechanika zabawy nie wykorzystuje systemu energii, znanego
+                            z wielu innych darmowych
+                            gier mobilnych. </span>W związku z tym nie jesteśmy ograniczani przez życia, ale z
+                        drugiej strony podobny efekt uzyskano przez wirtualne waluty. Ich brak skutecznie może
+                        powstrzymać nas przed podjęciem kolejnego zadania, więc decydując się na Clash of Clans
+                        należy wiedzieć, że darmowa rozrywka po kilku godzinach zabawy zaczyna się robić mozolna i
+                        wymaga cierpliwości podczas ciułania wirtualnego złota.
+                    </p>
+
+                    <p class="info__text info__box-text-hidden--destription">
+                        <span class="info__text-specify">Clash of Clans, choć nie zaskakuje właściwie niczym, jest
+                            bardzo dobrą pozycją dla
+                            miłośników gier wideo.</span>Aplikacja jest prosta, ale oferuje mnóstwo odblokowywanych
+                        z biegiem czasu elementów oraz wymusza stosowanie pewnych taktyk podczas przywoływania
+                        swoich podwładnych czy stawiania budowli. Pozwala walczyć z SI i z innymi graczami, ale też
+                        zawierać z nimi sojusze. Do tego jest darmowa i choć w późniejszym czasie system
+                        mikropłatności robi się nieco uciążliwy, to i tak warto dać jej szansę, tak jak zrobiły to
+                        miliony innych osób.
+                        <button class="info__box-btn info__box-btn-special">
+                            Schowaj!
+                        </button>
+                    </p>
+
+
+                </div>
+            </div>
+            <p class="info__autor">Tekst skopiowany od: <a href="#" class="info__autor-link">GRYOnline.pl</a>
+            </p>
+
+        </section>
+        <section class="hero-img">
+            <div class="white-block white-block-left"></div>
+            <div class="white-block white-block-right"></div>
+        </section>
+        <section class="guide section-padding">
+            <div class="wrapper">
+                <h2 class="section-heading">Poradniki:</h2>
+
+                <div class="guide__cards"><!-- zmienic onlick na inny -->
+                    <div class="guide__card guide__card--one" onclick="location.href='#guide'">
+                        <h3 class="guide__card-info">Początkujący</h3>
+                    </div>
+                    <div class="guide__card guide__card--two" onclick="location.href='#guide'">
+                        <h3 class="guide__card-info">Zaawansowany</h3>
+                    </div>
+                </div>
+
+                <h3 class="guide__title">Inne poradniki</h3>
+                <div class="guide__boxes">
+                    <a href="#"><button class="guide__boxes-btn btn-special-animation">Potki</button></a>
+                    <a href="#"><button class="guide__boxes-btn  btn-special-animation">Coś tam</button></a>
+                    <a href="#"><button class="guide__boxes-btn  btn-special-animation">Budowniczy</button></a>
+                </div>
+            </div>
+        </section>
+        <section class="maps wrapper section-padding">
+            <h2 class="section-heading">Mapy:</h2>
+            <div class="maps__cards team-carousel">
+                <div class="maps__card"><img src="img/hall1.jpg" alt="town hall 1 baza" class="maps__card-img"><span
+                        class="maps__card-text">Town hall 1</span></div>
+                <div class="maps__card"><img src="img/hall2.webp" alt="town hall 2 baza" class="maps__card-img"><span
+                        class="maps__card-text">Town hall 2</span></div>
+                <div class="maps__card"><img src="img/hall3.jpg" alt="town hall 3 baza" class="maps__card-img"><span
+                        class="maps__card-text">Town hall 3</span></div>
+                <div class="maps__card"><img src="img/hall4.jpg" alt="town hall 4 baza" class="maps__card-img"><span
+                        class="maps__card-text">Town hall 4</span></div>
+                <div class="maps__card"><img src="img/hall5.jpg" alt="town hall 5 baza" class="maps__card-img"><span
+                        class="maps__card-text">Town hall 5</span></div>
+                <div class="maps__card"><img src="img/hall6.jpg" alt="town hall 6 baza" class="maps__card-img"><span
+                        class="maps__card-text">Town hall 6</span></div>
+                <div class="maps__card"><img src="img/hall7.jpeg" alt="town hall 7 baza" class="maps__card-img"><span
+                        class="maps__card-text">Town hall 7</span></div>
+                <div class="maps__card"><img src="img/hall8.jpg" alt="town hall 8 baza" class="maps__card-img"><span
+                        class="maps__card-text">Town hall 8</span></div>
+                <div class="maps__card"><img src="img/hall9.jpg" alt="town hall 9 baza" class="maps__card-img"><span
+                        class="maps__card-text">Town hall 9</span></div>
+                <div class="maps__card"><img src="img/hall10.png" alt="town hall 10 baza" class="maps__card-img"><span
+                        class="maps__card-text">Town hall 10</span></div>
+                <div class="maps__card"><img src="img/hall11.jpg" alt="town hall 11 baza" class="maps__card-img"><span
+                        class="maps__card-text">Town hall 11</span></div>
+                <div class="maps__card"><img src="img/hall12.webp" alt="town hall 12 baza" class="maps__card-img"><span
+                        class="maps__card-text">Town hall 12</span></div>
+            </div>
+        </section>
+        <section class="contact section-padding" id="contact">
+            <div class="white-block white-block-right"></div>
+            <div class="white-block white-block-left"></div>
+            <h2 class="section-heading">Kontakt:</h2>
+
+            <div class="wrapper">
+                <form class="contact__form">
+                    <div class="contact__form-top">
+                        <label for="name" class="contact__form-label">Imię i nazwisko:</label>
+                        <input type="text" class="contact__form-input" id="name">
+
+                        <label for="email" class="contact__form-label">Adres e-mail:</label>
+                        <input type="text" id="email" class="contact__form-input">
+                    </div>
+
+                    <label for="msg" class="contact__form-label">Wiadomości:</label>
+                    <textarea id="msg" class="contact__form-textarea"></textarea>
+
+                    <button type="submit" class="contact__form-btn btn-special-animation">Wyślij</button>
+                </form>
+            </div>
+
+        </section>
+    </main>
+    <footer class="footer">
+        <p class="footer__bottom-text"><span class="footer__year"></span> &copy; By PanDamax</p>
+    </footer>
+
+
+    <!-- /dorobić kręcony kwadrat czy ki chuj do rozwiniętego opisu -->
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

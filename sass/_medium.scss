@@ -1,0 +1,44 @@
+@media (min-width: 700px) and (max-width: 1000px) {
+	.header {
+		&__btn {
+			padding: 0.4em 1em;
+			transform: translateY(60px);
+
+			&-link {
+				font-size: 2.2rem;
+			}
+		}
+	}
+}
+@media (min-width: 768px) {
+	.white-block {
+		height: 50px;
+		width: 45%;
+	}
+	.waves {
+		height: 260px;
+	}
+
+	.hero-img {
+		padding: 13em 2em;
+	}
+
+	.guide {
+		&__cards {
+			display: flex;
+			justify-content: center;
+		}
+
+		&__card {
+			width: 45%;
+			margin: 0 1em;
+		}
+	}
+
+	.maps {
+		&__card {
+			width: 250px !important;
+			height: 200px !important;
+		}
+	}
+}

@@ -1,0 +1,96 @@
+.wrapper {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1200px;
+}
+
+.white-block {
+	position: absolute;
+	height: 40px;
+	width: 60%;
+	background-color: $pure-white;
+	&-left {
+		bottom: -1px;
+		left: -50px;
+		transform: skew(45deg);
+	}
+	&-right {
+		top: 0;
+		right: -50px;
+		transform: skew(45deg);
+	}
+}
+
+.section-heading {
+	position: relative;
+	margin-bottom: .6em;
+	font-size: 3rem;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: center;
+	color: $main-color;
+	letter-spacing: 2px;
+	font-family: 'Kalam', cursive;
+	// font-family: 'Pacifico', cursive;
+}
+
+.section-padding {
+	padding: 4em 2em;
+}
+
+@media (min-width: 768px) {
+	.section-heading {
+		font-size: 3.6rem;
+	}
+	// .section-padding {
+	// 	padding: 8em 2em;
+	// }
+}
+@media (min-width: 992px) {
+	.section-heading {
+		font-size: 4.8rem;
+	}
+	// .section-padding {
+	// 	padding: 10em 2em;
+	// }
+}
+
+@mixin heroImages($bgImg) {
+	background-image: $blue-gradient, url($bgImg);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+.btn-special-animation {
+	position: relative;
+	transition: background-color 0.3s;
+	overflow: hidden;
+	z-index: 0;
+
+	&::before {
+		display: block;
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		transform: scaleX(0);
+		transform-origin: right;
+		transition: transform 0.3s;
+		z-index: -1;
+	}
+	&:hover::before {
+		transform: scaleX(1);
+		transform-origin: left;
+	}
+}
+
+@mixin contactForm {
+	margin-bottom: 2em;
+	padding: 0.6em 1.2em;
+	border: none;
+	border-radius: 8px;
+	font-size: 1.6rem;
+}
